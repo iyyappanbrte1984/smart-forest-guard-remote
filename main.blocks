@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="D1xpXjc[;5,f}uj,9FZI">Reading</variable><variable id="4pn-T|t69q6FQQ(z^BdN">TEMP</variable></variables><block type="pxt-on-start" id=")yRF6m,Y{-7@y;{QJlU5" x="-683" y="-2070"><statement name="HANDLER"><block type="device_show_leds" id="r^G.C%IEH_64.[NhlAY*"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="g?1c_$PHOA+IE1*v:b4J"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        . # # # . 
+        . # # # . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="kw(HCkV5b/2f;A79#.;g"><field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field><next><block type="device_clear_display" id="SHFBg!GlhOH1g(qgi|FF"><next><block type="device_set_brightness" id="feHL0)F3xoio{WZI(SgT"><value name="value"><shadow type="math_number_minmax" id="@q|}-t}Af2EX9O{/%c/D"><mutation min="0" max="255" label="Number" precision="0"></mutation><field name="SLIDER">64</field></shadow></value><next><block type="radio_set_group" id="-ZC8Nu/,?01432^Ij1g?"><value name="ID"><shadow type="math_number_minmax" id="X_t7VV@:_beo6UX#Axv+"><mutation min="0" max="255" label="Number" precision="0"></mutation><field name="SLIDER">77</field></shadow></value><next><block type="variables_set" id="g924-l%F_$5T#+:Q2q+X"><field name="VAR" id="4pn-T|t69q6FQQ(z^BdN">TEMP</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_temperature" id="e~Pfph0J1G?i{FEyj2Te"></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="vYYfR)2hEcsuj*_GLa|6" x="-402" y="-2043"><statement name="HANDLER"><block type="device_show_number" id="_mnmiLPgndx]UG*n#d1."><value name="number"><block type="variables_get" id="0;,~vVM~HKPRfj8Lu5}U"><field name="VAR" id="4pn-T|t69q6FQQ(z^BdN">TEMP</field></block></value><next><block type="device_plot_bar_graph" id="D@1|S4|0@(E_,ZSB({e{"><value name="value"><block type="variables_get" id="XumS7Fv}3$26+BpQj,_!"><field name="VAR" id="4pn-T|t69q6FQQ(z^BdN">TEMP</field></block></value><value name="high"><shadow type="math_number" id="Ty_u/0(@K,oZ5^uXWGT)"><field name="NUM">50</field></shadow></value><next><block type="controls_if" id="r4s2~)n|3CXqtpt9`#KP"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="T3uFI(a$-ly;{6!w|Nqa"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id=".Dk|hcj9of]=rD:wTZZ."><field name="VAR" id="4pn-T|t69q6FQQ(z^BdN">TEMP</field></block></value><value name="B"><shadow type="math_number" id="nH#u.wlrPT2P~Fu7xDym"><field name="NUM">30</field></shadow></value></block></value><statement name="DO0"><block type="radio_datagram_send" id="z^/-sSt@q5/4(^YD0e$l"><value name="value"><shadow type="math_number" id="K$AE*:8DO9DH(QFAL@mO"><field name="NUM">1</field></shadow></value></block></statement></block></next></block></next></block></statement></block><block type="variables_get" id="K:d@LSV44s4%#[I$9*HC" disabled="true" x="0" y="0"><field name="VAR" id="4pn-T|t69q6FQQ(z^BdN">TEMP</field></block></xml>
